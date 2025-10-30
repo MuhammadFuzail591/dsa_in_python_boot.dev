@@ -12,6 +12,10 @@ class Stack:
       if len(self.items) == 0:
          return None
       return self.items[-1]
+   
+   def is_empty(self):
+        return len(self.items) == 0
+
 
    def pop(self):
       if len(self.items) == 0:
