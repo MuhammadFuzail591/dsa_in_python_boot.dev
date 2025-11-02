@@ -1,6 +1,5 @@
 from node import Node
 
-
 class LinkedList:
    def __init__(self):
       self.head = None
@@ -8,9 +7,10 @@ class LinkedList:
    def __iter__(self):
       node = self.head
 
-      while node != None:
+      while node is not None:
          yield node
          node = node.next
+
 
    # don't touch below this line
 
